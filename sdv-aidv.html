@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Robotics Corner - Technical Showcase on Software-Defined Vehicles (SDV) & AI-Defined Vehicles (AIDV) and our comprehensive developer skill matrix.">
+  <meta name="keywords"
+    content="SDV, AIDV, Adaptive AUTOSAR, SOME/IP, DoIP, QNX, AGL, CUDA, Bazel, Automotive, Embedded C, RTOS, Software Architecture, Android Automotive">
+  <title>SDV & AIDV Technical Showcase | Robotics Corner</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img class="logo-icon" src="logo.png" alt="Robotics Corner Logo">
+        <span>Robotics Corner</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#process">Process</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="#" class="active">SDV &amp; AIDV Showcase</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Showcase Header -->
+  <header class="showcase-header">
+    <div class="container">
+      <span class="section-label">Next-Gen Architecture</span>
+      <h1>Software-Defined &amp; <span class="text-gradient">AI-Defined Vehicles</span></h1>
+      <p class="subtitle">Deep technical capabilities in designing centralized zonal E/E platforms and intelligent safety-critical mobility systems.</p>
+    </div>
+  </header>
+
+  <!-- Core Showcase Panels -->
+  <section class="container" style="padding: 0 0 var(--space-4xl) 0;">
+    <div class="showcase-grid">
+      <!-- SDV Core -->
+      <div class="tech-panel">
+        <span class="section-label" style="font-size: 0.75rem;">Infrastructure</span>
+        <h3>Software-Defined Vehicle (SDV)</h3>
+        <p>Decoupling hardware and software is the foundation of the modern E/E architecture. By introducing virtualization and automotive-grade middleware, we construct a flexible vehicle operating environment capable of continuous OTA evolution.</p>
+        <div class="tech-list">
+          <div class="tech-list-item">
+            <span class="tech-list-icon">⚡</span>
+            <div class="tech-list-content">
+              <h4>Service-Oriented Middleware</h4>
+              <p>Dynamic communication utilizing SOME/IP and DDS over high-speed Ethernet backbones.</p>
+            </div>
+          </div>
+          <div class="tech-list-item">
+            <span class="tech-list-icon">⚡</span>
+            <div class="tech-list-content">
+              <h4>Virtualization &amp; Hypervisors</h4>
+              <p>QNX Hypervisor configurations to run mixed-criticality OS partitions (e.g. QNX RTOS next to AAOS).</p>
+            </div>
+          </div>
+          <div class="tech-list-item">
+            <span class="tech-list-icon">⚡</span>
+            <div class="tech-list-content">
+              <h4>Adaptive AUTOSAR ara API</h4>
+              <p>Standardized deployment of adaptive applications using execution, communication, and state managers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AIDV Core -->
+      <div class="tech-panel">
+        <span class="section-label" style="font-size: 0.75rem;">Intelligence</span>
+        <h3>AI-Defined Vehicle (AIDV)</h3>
+        <p>AI represents the intelligent cognitive layer of the vehicle. We embed neural network perception pipelines, high-performance sensor fusion, and natural language interfaces into the vehicle's runtime environment.</p>
+        <div class="tech-list">
+          <div class="tech-list-item">
+            <span class="tech-list-icon">🧠</span>
+            <div class="tech-list-content">
+              <h4>Heterogeneous Compute Acceleration</h4>
+              <p>CUDA-accelerated sensor processing pipelines executing on high-performance automotive GPUs (NVIDIA Orin).</p>
+            </div>
+          </div>
+          <div class="tech-list-item">
+            <span class="tech-list-icon">🧠</span>
+            <div class="tech-list-content">
+              <h4>3D Computer Vision Perception</h4>
+              <p>LiDAR-Camera sensor fusion models optimized via TensorRT for ultra-low latency inference.</p>
+            </div>
+          </div>
+          <div class="tech-list-item">
+            <span class="tech-list-icon">🧠</span>
+            <div class="tech-list-content">
+              <h4>Local Cabin AI &amp; NLP</h4>
+              <p>Deployment of local Small Language Models (SLMs) for low-latency in-cabin offline voice assistants.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architectural Showcase Block -->
+  <section class="container" style="padding: 0 0 var(--space-4xl) 0;">
+    <div class="diagram-card">
+      <span class="section-label">System Architecture</span>
+      <h3>Next-Generation Zonal E/E Layout</h3>
+      <p>Transition from decentralized ECUs to zonal hubs communicating with a high-performance Central Compute unit via SOME/IP over automotive Ethernet.</p>
+      
+      <svg class="svg-diagram" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background Glow -->
+        <circle cx="400" cy="225" r="150" fill="url(#radialGlow)" opacity="0.15"/>
+        
+        <!-- Connectors -->
+        <path d="M180 120 L400 225" stroke="#2ec4b6" stroke-width="2" stroke-dasharray="6 4" opacity="0.6"/>
+        <path d="M180 330 L400 225" stroke="#2ec4b6" stroke-width="2" stroke-dasharray="6 4" opacity="0.6"/>
+        <path d="M620 120 L400 225" stroke="#2ec4b6" stroke-width="2" stroke-dasharray="6 4" opacity="0.6"/>
+        <path d="M620 330 L400 225" stroke="#2ec4b6" stroke-width="2" stroke-dasharray="6 4" opacity="0.6"/>
+        
+        <path d="M100 120 L180 120" stroke="#0f4c81" stroke-width="1.5" opacity="0.7"/>
+        <path d="M100 330 L180 330" stroke="#0f4c81" stroke-width="1.5" opacity="0.7"/>
+        <path d="M700 120 L620 120" stroke="#0f4c81" stroke-width="1.5" opacity="0.7"/>
+        <path d="M700 330 L620 330" stroke="#0f4c81" stroke-width="1.5" opacity="0.7"/>
+
+        <!-- Central Compute Platform -->
+        <rect x="300" y="175" width="200" height="100" rx="12" fill="#1a2744" stroke="#2ec4b6" stroke-width="3"/>
+        <text x="400" y="215" fill="#e6f1ff" font-family="Inter, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Central Compute</text>
+        <text x="400" y="235" fill="#2ec4b6" font-family="JetBrains Mono, monospace" font-size="11" text-anchor="middle">QNX RTOS / AGL</text>
+        <text x="400" y="250" fill="#8892b0" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">Adaptive AUTOSAR &amp; CUDA</text>
+
+        <!-- Zonal Nodes -->
+        <!-- Front Left Zone -->
+        <rect x="110" y="85" width="140" height="70" rx="8" fill="#112240" stroke="#0f4c81" stroke-width="2"/>
+        <text x="180" y="115" fill="#e6f1ff" font-size="12" font-weight="bold" text-anchor="middle">Front Left Zone</text>
+        <text x="180" y="135" fill="#8892b0" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Classic AUTOSAR</text>
+
+        <!-- Rear Left Zone -->
+        <rect x="110" y="295" width="140" height="70" rx="8" fill="#112240" stroke="#0f4c81" stroke-width="2"/>
+        <text x="180" y="325" fill="#e6f1ff" font-size="12" font-weight="bold" text-anchor="middle">Rear Left Zone</text>
+        <text x="180" y="345" fill="#8892b0" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Classic AUTOSAR</text>
+
+        <!-- Front Right Zone -->
+        <rect x="550" y="85" width="140" height="70" rx="8" fill="#112240" stroke="#0f4c81" stroke-width="2"/>
+        <text x="620" y="115" fill="#e6f1ff" font-size="12" font-weight="bold" text-anchor="middle">Front Right Zone</text>
+        <text x="620" y="135" fill="#8892b0" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Classic AUTOSAR</text>
+
+        <!-- Rear Right Zone -->
+        <rect x="550" y="295" width="140" height="70" rx="8" fill="#112240" stroke="#0f4c81" stroke-width="2"/>
+        <text x="620" y="325" fill="#e6f1ff" font-size="12" font-weight="bold" text-anchor="middle">Rear Right Zone</text>
+        <text x="620" y="345" fill="#8892b0" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Classic AUTOSAR</text>
+
+        <!-- Sensors & Actuators peripheral nodes -->
+        <!-- Front Cameras -->
+        <circle cx="60" cy="120" r="20" fill="#0a192f" stroke="#2ec4b6" stroke-width="1.5"/>
+        <text x="60" y="124" fill="#2ec4b6" font-size="10" font-weight="bold" text-anchor="middle">CAM</text>
+
+        <!-- Radar -->
+        <circle cx="60" cy="330" r="20" fill="#0a192f" stroke="#2ec4b6" stroke-width="1.5"/>
+        <text x="60" y="334" fill="#2ec4b6" font-size="10" font-weight="bold" text-anchor="middle">RADAR</text>
+
+        <!-- Display -->
+        <circle cx="740" cy="120" r="20" fill="#0a192f" stroke="#2ec4b6" stroke-width="1.5"/>
+        <text x="740" y="124" fill="#2ec4b6" font-size="10" font-weight="bold" text-anchor="middle">HUD</text>
+
+        <!-- Actuator Brakes -->
+        <circle cx="740" cy="330" r="20" fill="#0a192f" stroke="#2ec4b6" stroke-width="1.5"/>
+        <text x="740" y="334" fill="#2ec4b6" font-size="10" font-weight="bold" text-anchor="middle">ACT</text>
+
+        <!-- Definitions -->
+        <defs>
+          <radialGradient id="radialGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#2ec4b6" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#2ec4b6" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+      </svg>
+      <p>Visual representation of the zonal layout. Peripheral components direct raw measurements to Zonal ECUs, which serialize and route traffic to the Central Compute platform.</p>
+    </div>
+  </section>
+
+  <!-- Interactive Developer Skill Matrix Section -->
+  <section class="matrix-section" id="skillMatrixSection">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: var(--space-xl);">
+        <span class="section-label">Engineering Inventory</span>
+        <h2>Developer <span class="text-gradient">Skill Matrix</span></h2>
+        <p>Traceable competencies and tool stack knowledge across our automotive and AI engineers.</p>
+      </div>
+
+      <!-- Filters & Search -->
+      <div class="matrix-controls">
+        <div class="matrix-search">
+          <svg class="matrix-search-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <input type="text" id="skillSearch" placeholder="Search skills, tools, or levels (e.g. 'bazel', 'autosar', 'L4')...">
+        </div>
+        <div class="matrix-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="middleware">Middleware &amp; Comm</button>
+          <button class="filter-btn" data-filter="diagnostics">Diagnostics &amp; Safety</button>
+          <button class="filter-btn" data-filter="os">OS &amp; RTOS</button>
+          <button class="filter-btn" data-filter="languages">Languages</button>
+          <button class="filter-btn" data-filter="systems">Systems &amp; Arch</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; Math</button>
+          <button class="filter-btn" data-filter="devops">DevOps &amp; Build</button>
+        </div>
+      </div>
+
+      <!-- Matrix Cards Grid -->
+      <div class="matrix-grid" id="matrixGrid">
+        
+        <!-- Skill 1: Adaptive AUTOSAR -->
+        <div class="matrix-card" data-category="middleware">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">Middleware &amp; Comm</span>
+              <h3>Adaptive AUTOSAR</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> Vector DaVinci, ARXML Manifests, ara::com, ara::exec, ara::phm, ara::diag
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Understands SOA basics; writes simple Adaptive Applications (AAs) from templates.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Configures standard ara::com service interfaces; writes basic execution manifests (ARXML).</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Implements custom service designs; manages state machine transitions and complex deployments.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Optimizes stack configurations; troubleshoots platform-level startup/diagnostics execution.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Architects complete multi-partition Adaptive integrations; dictates vendor selection and integration plans.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 2: IPC & SOME/IP -->
+        <div class="matrix-card" data-category="middleware">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">Middleware &amp; Comm</span>
+              <h3>IPC &amp; SOME/IP</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> SOME/IP, SOME/IP-SD, POSIX Shared Memory, Domain Sockets, vsomeip
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Understands basic sockets; knows SOME/IP header formats and UDP/TCP differences.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Configures simple service discovery; implements standard service clients using vsomeip.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Customizes serialization rules; manages zero-copy shared memory allocations for cameras.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Designs high-performance IPC layouts; troubleshoots frame losses and network congestions.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Architects global vehicle network messaging; designs cross-SoC communication layers.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 3: Diagnostics & DoIP -->
+        <div class="matrix-card" data-category="diagnostics">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">Diagnostics &amp; Safety</span>
+              <h3>Diagnostics &amp; DoIP</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> ISO 13400 (DoIP), ISO 14229 (UDS), CANoe, CANalyzer, ODX, DLT
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Understands diagnostic trouble codes (DTCs) and basic diagnostic query frames.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Configures standard diagnostic identifiers (DIDs); records execution logs using DLT.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Implements diagnostic service modules under ara::diag; designs custom service interfaces.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Authorizes ODX configurations; designs secure diagnostics access levels; reviews log schemas.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Defines organizational guidelines for diagnostic communication and secure remote flashing.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 4: POSIX-Based OSes (AGL/QNX) -->
+        <div class="matrix-card" data-category="os">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">OS &amp; RTOS</span>
+              <h3>POSIX-Based OSes (AGL &amp; QNX)</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> QNX Neutrino RTOS, Automotive Grade Linux (AGL), QNX/ACRN Hypervisors
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Familiar with Unix commands; understands processes, threads, and memory virtual mapping.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Writes basic multi-threaded POSIX apps; utilizes QNX PPS and message channels.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Brings up BSP components; writes simple character device drivers; configures system services.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Configures hypervisors; tunes real-time scheduling priorities; diagnoses kernel crashes.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Architects complete OS layout for critical SoCs; leads ASIL-D safety compliance audits for OS.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 5: Modern C++ -->
+        <div class="matrix-card" data-category="languages">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">Languages</span>
+              <h3>Modern C++</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> C++14/17/20/23, MISRA C++:2023, AUTOSAR C++14 Guidelines, Clang
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Writes simple classes; uses basic pointers; understands scope and inheritance models.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Uses C++14/17 tools (smart pointers, lambda expressions, RAII, std::optional, std::variant).</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Utilizes C++20 features (concepts, ranges); designs templates; optimizes memory allocations.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Develops lock-free queues; profiles compiler generated binaries; guarantees O(1) determinism.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Establishes company-wide coding guidelines; designs core framework libraries.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 6: Embedded C & RTOS -->
+        <div class="matrix-card" data-category="languages">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">Languages</span>
+              <h3>Embedded C &amp; RTOS</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> Classic AUTOSAR MCAL, FreeRTOS, SafeRTOS, OSEK/VDX, Bare-Metal C
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Understands memory-mapped I/O, register configuration, and basic C structures.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Configures simple peripherals (GPIO, ADC, PWM); creates tasks and semaphores under RTOS.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Writes device drivers for SPI/I2C/CAN; debugs race conditions and stack overflows.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Designs bare-metal scheduler cores; performs board bring-up; designs low-power sleep loops.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Defines microcontroller platform strategy; designs custom functional safety (ASIL-D) drivers.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 7: Software Architecture -->
+        <div class="matrix-card" data-category="systems">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">Systems &amp; Arch</span>
+              <h3>Software Architecture</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> ISO 26262 (ASIL-D), ISO 21434 (Cybersecurity), UML, Design Patterns
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Understands basic layered architectures; reads system block design diagrams.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Applies SOLID principles; defines module boundaries and interfaces; designs simple patterns.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Designs service contracts; designs robust multi-process architectures with clean decoupling.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Designs functional safety concepts; maps safety cases (ASIL decomposition); configures security modules.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Architects complete automotive HPC and zonal platform suites; negotiates architectural tradeoffs.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 8: Algorithms -->
+        <div class="matrix-card" data-category="ai">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">AI &amp; Math</span>
+              <h3>Algorithms</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> Kalman Filters, Particle Filters, A*, Hybrid A*, MPC, Optimization
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Implements basic algorithms (sorting, searching); analyzes Big-O space/time complexity.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Writes pathfinding routines (A*); implements simple mathematical filters; runs matrix calculations.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Develops extended Kalman filters (EKF); integrates MPC controllers; designs vehicle kinematics models.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Optimizes complex multi-sensor fusion algorithms; solves high-dimensional planning bottlenecks.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Sets algorithmic research vectors; designs safety-critical fallback trajectory paths.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 9: Parallel Processing (CUDA) -->
+        <div class="matrix-card" data-category="ai">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">AI &amp; Math</span>
+              <h3>Parallel Processing (CUDA)</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> CUDA Toolkit, NVIDIA TensorRT, Thrust, cuDNN, GPU Profiling
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Understands SIMD/SIMT; knows difference between CPU and GPU core structures.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Writes simple CUDA kernels; manages memory copies between Host and Device.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Optimizes memory accesses (shared memory tiling); uses CUDA streams to overlap computations.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Writes high-performance kernels for tensor operators; configures TensorRT deep learning inferences.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Architects global GPU scheduler mechanisms; integrates heterogeneous compute flows.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 10: Build Systems (Bazel) -->
+        <div class="matrix-card" data-category="devops">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">DevOps &amp; Build</span>
+              <h3>Build Systems (Bazel)</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> Bazel, CMake, Monorepos, Hermetic Toolchains
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Compiles applications via GCC; writes basic Makefiles or CMake projects.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Writes basic BUILD files; declares targets, libraries, and binary build dependency files.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Configures ARM cross-compilation toolchains in Bazel; optimizes cache utilization.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Designs custom Bazel rules; integrates third-party package ecosystems hermetically.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Architects enterprise-scale monorepos; implements globally distributed build and test caches.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 11: Computer Vision & NLP -->
+        <div class="matrix-card" data-category="ai">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">AI &amp; Math</span>
+              <h3>Computer Vision &amp; NLP</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> PyTorch, OpenCV, Hugging Face, YOLO, Transformer Architectures, TTS/STT
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Understands basic neural networks, convolutions, and image matrix processing.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Fine-tunes standard vision models (YOLO, ResNet); tokenizes text databases for NLP.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Develops 3D bounding-box pipelines; configures local Small Language Models (SLMs).</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Customizes neural layers; runs quantitative compression models (INT8 quantization) for SoCs.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Directs multimodal VLA AI research; designs safety-assured deep learning architectures.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 12: Android for Automotive (AAOS) -->
+        <div class="matrix-card" data-category="systems">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">Systems &amp; Arch</span>
+              <h3>Android for Automotive (AAOS)</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> Android Car API, Vehicle HAL (VHAL), CarApp Library, SELinux Policies
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Understands general Android SDK and basic Android UI activity lifecycles.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Develops system applications utilizing the official Android Car API services.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Customizes the Vehicle HAL (VHAL); maps CAN signals to standard Android Car properties.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Tunes boot speed; configures SELinux security partitions; develops hardware-level audio HALs.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Architects complete digital cockpit frameworks integrating hypervisors, instrument clusters, and AAOS.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 13: Requirements Analysis -->
+        <div class="matrix-card" data-category="systems">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">Systems &amp; Arch</span>
+              <h3>Requirements Analysis</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> DOORS, Jama Connect, ASPICE SYS.2/SWE.1, Traceability Metrics
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Familiar with general requirements documents; understands they must be testable.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Drafts software requirements; maps traceabilities from system down to code.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Performs software change impact assessments; handles requirements dependencies.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Structures complete requirements trees; writes safety goals and requirements (FSR/TSR).</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Defines global systems engineering strategies; negotiates compliance scopes with OEMs.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 14: Software Design -->
+        <div class="matrix-card" data-category="systems">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">Systems &amp; Arch</span>
+              <h3>Software Design</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> SysML, Enterprise Architect, Cameo Systems Modeler, ASPICE SWE.2/SWE.3
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Reads architectural diagrams; writes basic component flowcharts.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Draws standard UML structure and behavior diagrams to document software designs.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Models API boundaries; performs SysML allocation modeling; describes concurrent designs.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Validates designs against ASPICE SWE.3 standards; sets software design frameworks.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Defines enterprise modeling systems; guides model-based systems engineering (MBSE) workflows.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 15: DevOps & CI/CD Pipelines -->
+        <div class="matrix-card" data-category="devops">
+          <div class="matrix-card-header">
+            <div class="matrix-title-area">
+              <span class="matrix-card-category">DevOps &amp; Build</span>
+              <h3>DevOps &amp; CI/CD Pipelines</h3>
+            </div>
+            <div class="matrix-card-tools">
+              <strong>Tools &amp; Standards:</strong> Jenkins, GitLab CI, GoogleTest, GMock, QAC, Coverity, HIL / SIL testing
+            </div>
+          </div>
+          <div class="matrix-levels-grid">
+            <div class="level-col">
+              <span class="level-badge level-1">L1: Novice</span>
+              <p class="level-text">Knows Git commands; resolves merge conflicts; executes build scripts manually.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-2">L2: Competent</span>
+              <p class="level-text">Writes automation scripts; creates build files for static analysis and unit testing.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-3">L3: Proficient</span>
+              <p class="level-text">Configures containerized build runners; automates SIL rigs; implements diagnostic dashboards.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-4">L4: Expert</span>
+              <p class="level-text">Designs complete multi-stage pipelines; integrates hardware-in-the-loop (HIL) automation.</p>
+            </div>
+            <div class="level-col">
+              <span class="level-badge level-5">L5: Lead</span>
+              <p class="level-text">Formulates global software delivery strategies; maintains compliance processes for releases.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Whitepaper Section -->
+  <section class="whitepaper-section" id="technicalWhitepaper">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Whitepaper</span>
+        <h2>Deep Technical <span class="text-gradient">Architectural Overview</span></h2>
+        <p>A comprehensive examination of how we compile these engineering domains to realize safety-certified, adaptive vehicle dynamics.</p>
+      </div>
+
+      <article class="whitepaper-article">
+        <!-- Section 1 -->
+        <div class="whitepaper-card">
+          <h2>1. The Centralization Shift: Zonal E/E Architectures</h2>
+          <p>Traditional vehicle engineering represents a decentralized mesh where each functional request involves isolated physical components. Introducing next-generation safety requirements, autonomous driving vision models, and continuous over-the-air updates renders this design obsolete due to harness complexity, bandwidth bottlenecks, and physical space constraints.</p>
+          <p>To overcome this, we design and support zonal E/E platforms. Zonal controllers act as high-speed data hubs, collecting raw sensor inputs (CAN, LIN, SPI) from their respective physical zones and converting them to Ethernet packets. These packets are routed via SOME/IP or DDS to a centralized High-Performance Compute (HPC) platform, containing the core processing elements (CPUs, GPUs, and NPUs) required to make localized decisions in microseconds.</p>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="whitepaper-card">
+          <h2>2. Service-Oriented Middleware (Adaptive AUTOSAR &amp; SOME/IP)</h2>
+          <p>In a Software-Defined Vehicle, applications are decoupled from the hardware layer through service-oriented middleware. Adaptive AUTOSAR provides the standard runtime environment (ara) for these applications. Instead of hardcoding signal routing via CAN matrices, application modules register as dynamic services exposing standardized APIs.</p>
+          <ul>
+            <li><strong>ara::com:</strong> Manages service registration, subscription, and method invocation, abstracting whether communication is local (IPC) or remote (Ethernet).</li>
+            <li><strong>SOME/IP:</strong> Establishes high-performance serialization over IP networks. Coupled with SOME/IP-SD (Service Discovery), it allows controllers to detect new service instances dynamically at runtime.</li>
+            <li><strong>Manifest Config:</strong> ARXML-based manifests define strict resource constraints, scheduler properties, and networking mappings, allowing safe incremental updates.</li>
+          </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="whitepaper-card">
+          <h2>3. Real-Time OS &amp; Mixed Criticality Systems</h2>
+          <p>Running high-performance autonomous perception alongside safety-critical vehicle dynamics controls requires a robust real-time operating system that guarantees freedom from interference. We utilize QNX Neutrino RTOS and Type 1 hypervisors to handle these mixed-criticality requirements:</p>
+          <ul>
+            <li><strong>Microkernel Architecture:</strong> QNX runs system drivers, filesystems, and network stacks in user space, ensuring that a driver crash cannot bring down the core kernel.</li>
+            <li><strong>Hypervisor Partitioning:</strong> We run isolated virtual machines on a single SoC. Safety-critical tasks (ADAS path planning) run in an ASIL-D QNX partition, while non-safety-critical interfaces (AAOS Infotainment) run in parallel, fully isolated from core vehicle networks.</li>
+            <li><strong>Automotive Grade Linux:</strong> Utilized for infotainment and telematics, providing rich software stacks, container support, and rapid development cycles.</li>
+          </ul>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="whitepaper-card">
+          <h2>4. AI Acceleration &amp; Parallel Processing (CUDA)</h2>
+          <p>AI-Defined Vehicles (AIDV) demand parallel processing to handle multi-camera perception, LiDAR point cloud processing, and local NLP. We optimize these intensive math routines for embedded GPUs:</p>
+          <ul>
+            <li><strong>CUDA Kernel Acceleration:</strong> Custom CUDA kernels handle image preprocessing, format conversion, and coordinate transformations in parallel, freeing up CPU overhead.</li>
+            <li><strong>TensorRT Compilation:</strong> Deep learning perception networks are optimized for runtime execution on target automotive chips using INT8/FP16 quantization, layer fusion, and kernel auto-tuning.</li>
+            <li><strong>Sensor Fusion:</strong> Multi-sensor streams (radar and camera feeds) are aligned in time and space, feeding 3D occupancy grids to provide the path planner with an obstacle-free representation of the environment.</li>
+          </ul>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="whitepaper-card">
+          <h2>5. Hermetic Build Systems &amp; DevOps Pipelines</h2>
+          <p>Managing a complex SDV codebase with hundreds of dependencies requires strict build systems and automated pipelines. We implement Bazel build scripts alongside containerized HIL pipelines:</p>
+          <ul>
+            <li><strong>Bazel Build:</strong> Ensures hermetic, reproducible builds across multi-developer and CI environments. By tracking strict input/output dependencies, Bazel guarantees correct incremental compilation.</li>
+            <li><strong>Automated HIL Testing:</strong> Code committed to repository triggers CI pipelines that run static analysis, execute GoogleTest unit tests in SIL, compile ARM binaries, and deploy to physical Hardware-in-the-Loop (HIL) test benches for validation.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact CTA Section -->
+  <section class="contact" style="padding-top: var(--space-2xl);">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: var(--space-xl);">
+        <h2>Ready to Develop <span class="text-gradient">Next-Gen Architectures?</span></h2>
+        <p>Partner with us to architect and implement your SDV and AIDV systems, backed by a highly certified team of automotive and AI engineers.</p>
+        <div style="margin-top: var(--space-xl);">
+          <a href="index.html#contact" class="btn btn-primary">
+            Get In Touch
+            <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img class="logo-icon" src="logo.png" alt="Robotics Corner Logo">
+            <span>Robotics Corner</span>
+          </a>
+          <p>Engineering consulting company specializing in embedded systems for automotive and robotics applications.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <a href="index.html#services">Automotive &amp; AUTOSAR</a>
+          <a href="index.html#services">Autonomous Driving</a>
+          <a href="index.html#services">Robotics</a>
+          <a href="index.html#services">Consulting</a>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <a href="index.html#about">About Us</a>
+          <a href="index.html#process">Our Process</a>
+          <a href="index.html#portfolio">Portfolio</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Technologies</h4>
+          <a href="sdv-aidv.html">SDV &amp; AIDV Showcase</a>
+          <a href="SDV_AIDV_Whitepaper_and_Skill_Matrix.md">Whitepaper Source</a>
+          <a href="index.html">Modern C++</a>
+          <a href="index.html">AUTOSAR</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Robotics Corner. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
